@@ -1,0 +1,300 @@
+body {
+  background-color: #121212; 
+  color: #ffffff; 
+}
+
+.navbar {
+  background-color: #000; 
+  border-bottom: 2px solid #ffd700; 
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #fff; 
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #ffd700; 
+  text-shadow: 0 0 6px #ffcc00;
+}
+
+.portada {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: url('https://hiepsibaotap.com/wp-content/uploads/2019/04/1001341.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.portada h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.portada p {
+  font-size: 1.2rem;
+  text-align: center;
+  width: 80%;
+}
+
+.intro-section {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background-color: #1a1a1a; 
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.4); 
+}
+
+.intro-section h1 {
+  font-size: 2.5rem;
+  color: #ffd700; 
+}
+
+.intro-section p {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.sidebar {
+  position: fixed;
+  left: -250px;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #1a1a1a; 
+  transition: left 0.3s;
+  z-index: 999;
+  box-shadow: 2px 0 10px rgba(255, 215, 0, 0.3);
+  padding: 1rem;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar a {
+  display: block;
+  color: #fff; 
+  padding: 1rem 0;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  color: #ffd700; 
+}
+
+.sidebar-toggle {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1000;
+  background-color: #000;
+  color: #ffd700; 
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+/* Efectos visuales */
+.fade-img {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-img.show {
+  opacity: 1;
+}
+
+.flip-card {
+  transition: transform 0.5s ease;
+}
+
+.flip-card:hover {
+  transform: rotateY(180deg);
+}
+
+.btn:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card-rojo-oscuro {
+  background-color: #8B0000;
+  color: #FFD700;
+  border: 1px solid #ff4c4c;
+}
+
+/* Tamaño unificado para imágenes */
+.img-preview {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+}
+
+/* Tamaño unificado para botones */
+.btn-platform {
+  margin: 5px;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.btn-gold {
+  background-color: #bfa046;
+  color: white;
+}
+
+/* Wishlist Section */
+.wishlist {
+  background-image: url('https://static.vecteezy.com/system/resources/previews/001/907/547/non_2x/red-background-with-gold-color-combination-free-vector.jpg'); /* Imagen de fondo */
+  background-size: cover; 
+  background-position: center; 
+  padding: 2rem;
+  border-radius: 15px;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.1);
+  width: 100%; 
+  margin: 0; 
+  box-sizing: border-box; 
+}
+
+.wishlist h2 {
+  font-size: 2rem;
+  color: #d4af37;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.wishlist p {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.platform-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; 
+  margin-top: 1rem;
+  justify-content: space-evenly;
+}
+
+.platform-buttons a img {
+  height: 40px; 
+  transition: transform 0.3s ease;
+}
+
+.platform-buttons a img:hover {
+  transform: scale(1.1);
+}
+
+.soporte-section { 
+  background-color: #1a1a1a;
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+  margin-top: 3rem;
+ 
+  box-shadow: 0 -5px 20px rgba(255, 215, 0, 0.2);
+}
+
+
+.soporte-section h2 {
+  font-size: 2rem;
+  color: #ffd700;
+  margin-bottom: 1rem;
+}
+
+.soporte-section p {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+.btn-soporte {
+  display: inline-block;
+  background-color: #bfa046;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn-soporte:hover {
+  background-color: #ffd700;
+  color: #000;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+}
+
+
+
+.scroll-img-wrapper {
+  overflow: hidden;
+  position: relative;
+  height: auto;
+}
+
+.scroll-img {
+  transition: transform 0.3s ease-out;
+  will-change: transform;
+}
+
+.personaje-img {
+  max-width: 150px;  
+  height: auto;  
+  margin: 10px; 
+}
+
+.jefe-img {
+  max-width: 150px;  
+  height: auto;  
+  margin: 10px;  
+}
+
+
+.bg-custom-dark {
+  background-color: #121212; 
+}
+
+.navbar {
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  height: 70px; 
+  background-color: #000;
+  border-bottom: 2px solid #ffd700;
+}
+
+.navbar .navbar-brand img {
+  height: 45px; 
+  margin-right: 10px;
+}
+
+.navbar .navbar-nav .nav-link {
+  font-size: 1.05rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #ffd700;
+  text-shadow: 0 0 6px #ffcc00;
+}
