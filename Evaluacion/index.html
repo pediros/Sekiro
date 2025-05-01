@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sekiro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="estilos.css" rel="stylesheet"> 
+</head>
+<body>
+  
+<!-- Barra de navegación estilo Sekiro -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg">
+  <div class="container-fluid">
+  
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"> 
+          <a class="nav-link text-warning" href="#inicio">Inicio</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link text-warning" href="#trailer">Tráiler</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-warning" href="#caracteristicas">Características</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-warning" href="#historia">Historia</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Botón para abrir el offcanvas -->
+<button class="btn btn-warning position-fixed top-50 start-0 translate-middle-y z-3" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" style="border-radius: 0 10px 10px 0;">
+  ☰
+</button>
+
+<!-- Offcanvas sidebar -->
+<div class="offcanvas offcanvas-start bg-dark text-light" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
+  <div class="offcanvas-header border-bottom border-warning">
+    <h5 class="offcanvas-title text-warning" id="sidebarMenuLabel">Menú Sekiro</h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="nav flex-column gap-2">
+      <li class="nav-item">
+        <a class="nav-link text-warning" href="#personajes">👤 Personajes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-warning" href="#comprar">🛒 Comprar ahora</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-warning" href="#soporte">🛠️ Soporte</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-warning" href="#requisitos">🧰 Requisitos del sistema</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+    <!-- Portada -->
+    <div class="portada" id="inicio">
+      <h1>Sekiro: Shadows Die Twice</h1>
+      <p>Adéntrate en el Japón feudal y enfrenta poderosos enemigos en una épica historia de venganza y redención.</p>
+    </div>
+
+<!-- Sección de Introducción -->
+<div class="intro-section">
+  <h1>🥷 Sekiro: Shadows Die Twice</h1>
+  <p><strong>Venganza, honor y muerte en el Japón feudal</strong></p>
+  <p><em>Sekiro: Shadows Die Twice</em> es un juego de acción y aventura desarrollado por FromSoftware y publicado por Activision. Ambientado en una versión fantástica del Japón del siglo XVI, durante el período Sengoku, el juego te pone en el papel de un shinobi conocido como el Lobo de un solo brazo. Tu misión es rescatar a tu joven señor, Kuro, y vengar la traición que te dejó marcado.</p>
+  <p>A diferencia de los anteriores títulos de FromSoftware, <em>Sekiro</em> prescinde de elementos de rol como la creación de personajes y el multijugador, enfocándose en una narrativa directa y un sistema de combate desafiante. El juego combina combate cuerpo a cuerpo, sigilo, exploración vertical y el uso de herramientas prostéticas para ofrecer una experiencia única y exigente.</p>
+  <p>Con una historia profunda, combates intensos y una atmósfera envolvente, <em>Sekiro: Shadows Die Twice</em> te desafiará a dominar sus mecánicas y a enfrentarte a poderosos enemigos en tu búsqueda de justicia y redención.</p>
+</div>
+
+<!-- Sección de tráiler justo arriba de la historia -->
+<div id="trailer" class="container-fluid bg-dark text-light p-4" style="margin-bottom: 0; padding-bottom: 0;">
+  <div class="row align-items-center">
+    <!-- Columna del tráiler -->
+    <div class="col-md-6 mb-4 mb-md-0">
+      <h2 class="text-center text-warning mb-4">Tráiler Oficial</h2>
+      <div class="ratio ratio-16x9">
+        <iframe src="https://www.youtube.com/embed/rXMX4YJ7Lks" title="Tráiler Sekiro: Shadows Die Twice" allowfullscreen></iframe>
+      </div>
+    </div>
+    <!-- Columna de texto -->
+    <div class="col-md-6">
+      <h3 class="text-center text-warning mb-4">La senda del Shinobi te espera</h3>
+      <p class="lead">El camino del shinobi está marcado por la espada y la muerte. Eres Lobo, un guerrero marcado por la venganza y la redención, atrapado entre un destino cruel y un futuro incierto. Enfréntate a los más poderosos enemigos, desafía la muerte y venganza el sufrimiento de tu maestro.</p>
+      <p class="lead">Atrévete a cruzar el umbral del combate, donde solo los más fuertes sobreviven. ¿Serás tú quien consiga dominar el arte del combate o sucumbirás al implacable filo de la espada?</p>
+      <p class="text-center">
+        <a href="#gameplay" class="btn btn-warning btn-lg">¡Aventúrate en tu destino!</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Sección de Características -->
+<div id="caracteristicas" class="container-fluid bg-dark text-light p-5" style="min-height: 600px; margin-top: 0;">
+  <h2 class="text-center text-warning mb-4">Características del Juego</h2>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="row g-4">
+        <!-- Característica 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 bg-black border-warning text-light">
+            <div class="card-body text-center">
+              <i class="bi bi-shield-shaded fs-1 text-warning"></i>
+
+              <h5 class="card-title mt-3">Combate Intenso</h5>
+              <p class="card-text">Domina el arte del enfrentamiento con katana. Precisión, ritmo y reflejos lo son todo.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Característica 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 bg-black border-warning text-light">
+            <div class="card-body text-center">
+              <i class="bi bi-person-fill-up fs-1 text-warning"></i>
+              <h5 class="card-title mt-3">Sigilo y Estrategia</h5>
+              <p class="card-text">Aprovecha las sombras para eliminar enemigos sin ser visto. El sigilo es clave.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Característica 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 bg-black border-warning text-light">
+            <div class="card-body text-center">
+              <i class="bi bi-arrow-up-right-circle fs-1 text-warning"></i>
+              <h5 class="card-title mt-3">Exploración Vertical</h5>
+              <p class="card-text">Usa tu prótesis con gancho para explorar tejados, árboles y precipicios del Japón feudal.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Característica 4 -->
+        <div class="col-md-4">
+          <div class="card h-100 bg-black border-warning text-light">
+            <div class="card-body text-center">
+              <i class="bi bi-heart-pulse fs-1 text-warning"></i>
+              <h5 class="card-title mt-3">Resurrección en Combate</h5>
+              <p class="card-text">Vuelve a la vida para tomar ventaja en combate y sorprender a tus enemigos.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Característica 5 -->
+        <div class="col-md-4">
+          <div class="card h-100 bg-black border-warning text-light">
+            <div class="card-body text-center">
+              <i class="bi bi-controller fs-1 text-warning"></i>
+              <h5 class="card-title mt-3">Desafío Extremo</h5>
+              <p class="card-text">Una experiencia para verdaderos guerreros. Cada enemigo pondrá a prueba tu habilidad.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Característica 6 -->
+        <div class="col-md-4">
+          <div class="card h-100 bg-black border-warning text-light">
+            <div class="card-body text-center">
+              <i class="bi bi-globe fs-1 text-warning"></i>
+              <h5 class="card-title mt-3">Japón Feudal Fantástico</h5>
+              <p class="card-text">Sumérgete en un mundo mágico lleno de paisajes impresionantes y mitología japonesa.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Sección de Historia -->
+<div id="historia" class="container-fluid bg-dark text-light p-5" style="min-height: 600px; margin-top: 0;">
+  <h1 class="text-center mb-4">Historia de Sekiro: Shadows Die Twice</h1>
+  <div class="row">
+    <div class="col-lg-6 mb-4">
+      <img class="img-fluid rounded" src="https://sm.ign.com/t/ign_latam/blogroll/s/sekiro-aim/sekiro-aiming-to-support-japanese-audio-worldwide_2r2v.1200.jpg" alt="Sekiro Historia">
+    </div>
+    <div class="col-lg-6">
+      <p>Sekiro: Shadows Die Twice tiene lugar en un Japón feudal ficticio, donde el protagonista, Wolf, es un shinobi que busca vengar la muerte de su señor, un joven amo llamado Kuro, y rescatarlo de las garras de un enemigo mortal. El viaje de Wolf está marcado por la lucha constante contra enemigos poderosos y la exploración de un mundo oscuro y peligroso.</p>
+      <p>A lo largo de la aventura, Wolf se enfrentará a numerosos desafíos, incluidas criaturas sobrenaturales y guerreros hábiles. Con un enfoque en el sigilo y el combate cuerpo a cuerpo, el juego ofrece una experiencia desafiante donde cada error puede ser fatal.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Sección de Personajes y Jefes con fondo -->
+<div class="marco-seccion text-light" style="background-image: url('https://wallpapers.com/images/featured/sekiro-shadows-die-twice-nf4vwi60jomeav8o.jpg'); background-size: cover; background-position: center; padding: 60px 20px; border-radius: 15px;">
+  <!-- Personajes -->
+  <h2 class="titulo-seccion text-center text-warning mb-4">Personajes</h2>
+  <div id="personajes" class="marco-seccion text-light"></div>
+  <div class="row mb-5">
+    <div class="col-md-3">
+      <button class="btn btn-outline-warning w-100 active personaje-btn mb-2" onclick="cambiarPersonaje(0)">Sekiro</button>
+      <button class="btn btn-outline-warning w-100 personaje-btn mb-2" onclick="cambiarPersonaje(1)">Kuro</button>
+      <button class="btn btn-outline-warning w-100 personaje-btn mb-2" onclick="cambiarPersonaje(2)">Genichiro Ashina</button>
+      <button class="btn btn-outline-warning w-100 personaje-btn mb-2" onclick="cambiarPersonaje(3)">Emma</button>
+      <button class="btn btn-outline-warning w-100 personaje-btn" onclick="cambiarPersonaje(4)">Owl (Padre)</button>
+    </div>
+    <div class="col-md-9">
+      <div class="card bg-black bg-opacity-75 border-warning shadow-lg">
+        <div class="card-body">
+          <div class="d-flex align-items-center">
+            <img id="personajeImagen" class="personaje-img img-fluid rounded" style="max-height: 300px;" src="https://media.vandal.net/master/3-2019/201932523545313_1.jpg" alt="Personaje">
+            <div class="personaje-detalles ms-4 text-warning">
+              <h3 id="personajeNombre">Sekiro</h3>
+              <p id="personajeTexto">El protagonista del juego, un shinobi que busca venganza mientras enfrenta desafíos sobrenaturales.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Jefes -->
+  <h2 class="titulo-seccion text-center text-warning mb-4">Jefes</h2>
+  <div class="row">
+    <div class="col-md-3">
+      <button class="btn btn-outline-warning w-100 active jefe-btn mb-2" onclick="cambiarJefe(0)">Isshin el Espadachín</button>
+      <button class="btn btn-outline-warning w-100 jefe-btn mb-2" onclick="cambiarJefe(1)">Demonio del Odio</button>
+      <button class="btn btn-outline-warning w-100 jefe-btn mb-2" onclick="cambiarJefe(2)">Monja Corrupta</button>
+      <button class="btn btn-outline-warning w-100 jefe-btn mb-2" onclick="cambiarJefe(3)">Lady Butterfly</button>
+      <button class="btn btn-outline-warning w-100 jefe-btn" onclick="cambiarJefe(4)">Great Serpent</button>
+    </div>
+    <div class="col-md-9">
+      <div class="card bg-black bg-opacity-75 border-warning shadow-lg">
+        <div class="card-body">
+          <div class="d-flex align-items-center">
+            <img id="jefeImagen" class="jefe-img img-fluid rounded" style="max-height: 300px;" src="https://media.vandal.net/master/3-2019/201932523541599_1.jpg" alt="Jefe">
+            <div class="jefe-detalles ms-4 text-warning">
+              <h3 id="jefeNombre">Isshin el Espadachín</h3>
+              <p id="jefeTexto">Uno de los combates finales más intensos del juego. Isshin es rápido, fuerte y extremadamente técnico.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+  <script>
+    // PERSONAJES
+    const personajes = [
+    {
+      nombre: "Wolf",
+      texto: "Wolf es el protagonista del juego, un shinobi que busca venganza y redención en un mundo brutal.",
+      imagen: "https://static.wikia.nocookie.net/sekiro/images/4/41/Sekiro.png/revision/latest?cb=20190422172934&path-prefix=es"
+    },
+    {
+      nombre: "Kuro",
+      texto: "Kuro es un joven señor cuya sangre tiene el poder de la inmortalidad. Wolf debe protegerlo a toda costa.",
+      imagen: "https://static.wikia.nocookie.net/sekiro-shadows-die-twice/images/7/71/Jeune_seigneur.png/revision/latest/thumbnail/width/360/height/450?cb=20190306141957&path-prefix=fr"
+    },
+    {
+      nombre: "Genichiro Ashina",
+      texto: "Genichiro es un líder del clan Ashina, un guerrero feroz que no se detendrá ante nada para proteger su hogar.",
+      imagen: "https://static.wikia.nocookie.net/sekiro/images/b/b4/Genichiro.png/revision/latest?cb=20190524193126&path-prefix=es"
+    },
+    {
+      nombre: "Emma",
+      texto: "Emma es una médica que acompaña a Wolf en su viaje, ayudándole en varias ocasiones y siendo parte importante de su historia.",
+      imagen: "https://i.ytimg.com/vi/C6I7e3HqmMo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBjivWau2oXSzREx-81Gqt8grq6PQ"
+    },
+    {
+      nombre: "Owl (Padre)",
+      texto: "Owl es el padre adoptivo de Wolf, un antiguo shinobi que tiene una relación compleja con el protagonista.",
+      imagen: "https://i.ytimg.com/vi/QMXGqLxmSfI/maxresdefault.jpg"
+    }
+  ];
+
+    function cambiarPersonaje(index) {
+      document.getElementById('personajeNombre').innerHTML = personajes[index].nombre;
+      document.getElementById('personajeTexto').innerHTML = personajes[index].texto;
+      document.getElementById('personajeImagen').src = personajes[index].imagen;
+    
+      
+      let botones = document.querySelectorAll('.personaje-btn');
+      botones.forEach(btn => btn.classList.remove('active'));
+      botones[index].classList.add('active');
+    }
+    window.onload = function() {
+      cambiarPersonaje(0);  
+    };
+
+    // JEFES
+    const jefes = [
+      {
+        nombre: "Isshin el Espadachín",
+        texto: "Uno de los combates finales más intensos del juego. Isshin es rápido, fuerte y extremadamente técnico.",
+        imagen: "https://media.vandal.net/master/3-2019/201932523541599_1.jpg"
+      },
+      {
+        nombre: "Demonio del Odio",
+        texto: "Un monstruo gigantesco con una ira desenfrenada. El jugador debe enfrentar esta bestia en un combate de supervivencia.",
+        imagen:"https://static.wikia.nocookie.net/sekiro/images/7/76/Demonio_del_odio.jpg/revision/latest?cb=20190426185440&path-prefix=es"
+      },
+      {
+        nombre: "Monja Corrupta",
+        texto: "Una figura del pasado con habilidades sobrenaturales. Su combate es vertiginoso y lleno de sorpresas.",
+        imagen: "https://static.wikia.nocookie.net/sekiro/images/f/f2/Monja_corrupta.png/revision/latest?cb=20190504165358&path-prefix=es"
+      },
+      
+      {
+        nombre: "Lady Butterfly",
+        texto: "Una luchadora ágil y astuta, que utiliza técnicas letales y una gran destreza en combate.",
+        imagen: "https://assetsio.gnwcdn.com/sekiro-ladybutterfly.jpg?width=1200&height=1200&fit=crop&quality=100&format=png&enable=upscale&auto=webp"
+      },
+      {
+        nombre: "Great Serpent",
+        texto: "Un enemigo gigantesco que agrega un toque sobrenatural al juego. El jugador debe ser astuto para evitarlo.",
+        imagen: "https://static.wikia.nocookie.net/shadowsdietwice/images/9/9e/Great_Serpent.png/revision/latest?cb=20190427225702"
+      }
+    ];
+
+    function cambiarJefe(index) {
+      document.getElementById('jefeNombre').innerHTML = jefes[index].nombre;
+      document.getElementById('jefeTexto').innerHTML = jefes[index].texto;
+      document.getElementById('jefeImagen').src = jefes[index].imagen;
+
+      // Resalta el botón seleccionado
+      let botones = document.querySelectorAll('.jefe-btn');
+      botones.forEach(btn => btn.classList.remove('active'));
+      botones[index].classList.add('active');
+    }
+  </script>
+
+ <!--Compra---->
+ <div class="container-fluid section-container bg-dark text-light">
+  <div id="comprar" class="container-fluid section-container bg-dark text-light"></div>
+  <div class="row w-100">
+    <!-- Formulario -->
+    <div class="col-md-6 mb-4">
+      <div class="buy-title">🛒 Comprar ahora</div> 
+      <div class="mb-3">
+        <label class="form-label">Seleccionar país</label>
+        <select class="form-select">
+          <option>Chile</option>
+          <option>Argentina</option>
+          <option>España</option>
+          <option>México</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Elegir edición</label>
+        <select class="form-select">
+          <option>Edición Estándar</option>
+          <option>Edición Digital Deluxe</option>
+          <option>Edición Coleccionista</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Elegir plataforma</label><br>
+        <button class="btn btn-outline-light btn-platform">PC</button>
+        <button class="btn btn-outline-light btn-platform">PS4</button>
+        <button class="btn btn-outline-light btn-platform">Xbox</button>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Formato</label><br>
+        <button class="btn btn-gold btn-platform">Físico</button>
+        <button class="btn btn-outline-light btn-platform">Digital</button>
+      </div>
+
+      <button class="btn btn-success mt-3">Reservar ahora</button>
+    </div>
+
+ 
+<div class="col-md-6 text-center">
+  <img src="https://m.media-amazon.com/images/I/91SEeitXxfL._SL1500_.jpg" alt="Sekiro Edición" class="img-preview">
+  <p class="mt-3">Lanzamiento: 22 Marzo 2019</p>
+</div>
+</div> 
+</div> 
+
+<!-- Lista de deseos -->
+<div class="container-fluid wishlist bg-dark text-light m-0 p-0">
+  <div class="p-4">
+    <h2 class="m-0">Añadir a la lista de deseos en tu plataforma favorita</h2>
+    <p class="mt-2 mb-4">¡Añade este videojuego a tu lista de deseos para estar al tanto de las últimas novedades!</p>
+    <div class="platform-buttons d-flex justify-content-center gap-4">
+      <a href="https://www.playstation.com/es-cl/games/sekiro-shadows-die-twice/" target="_blank" class="btn-playstation">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/PlayStation_logo.svg/2560px-PlayStation_logo.svg.png" alt="PlayStation" style="height: 40px;">
+      </a>
+      <a href="https://store.steampowered.com/app/814380/Sekiro_Shadows_Die_Twice__GOTY_Edition/" target="_blank" class="btn-steam">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Steam_icon_logo.svg/1024px-Steam_icon_logo.svg.png" alt="Steam" style="height: 40px;">
+      </a>
+      <a href="https://www.xbox.com/es-CL/games/store/sekiro-shadows-die-twice-edicion-juego-del-ano/bqd5wrrp2d6q" target="_blank" class="btn-xbox">
+        <img src="https://static.vecteezy.com/system/resources/previews/042/158/696/non_2x/xbox-logo-icon-free-vector.jpg" alt="Xbox" style="height: 40px;">
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Soporte -->
+<section class="soporte-section bg-dark text-light m-0 p-0">
+  <div class="p-4">
+    <section id="soporte" class="soporte-section bg-dark text-light m-0 p-0"></section>
+    <h2 class="m-0">¿Necesitas ayuda?</h2>
+    <p class="mt-2 mb-4">¡Puede que tengamos una solución para ti!</p>
+    <a href="about.html" class="btn-soporte">Pregunta al equipo de soporte</a>
+  </div>
+</section>
+
+<!-- Requisitos del Sistema -->
+<div class="marco-seccion mt-0 text-light" style="background-color: #1a1a1a; padding: 40px 20px; border-radius: 15px;">
+  <h2 class="titulo-seccion text-center text-warning mb-4">Requisitos del Sistema</h2>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card bg-black bg-opacity-75 border-warning mb-3">
+        <div class="card-header text-warning">Requisitos Mínimos</div>
+        <div class="card-body text-warning">
+          <ul class="mb-0">
+            <li>Sistema operativo: Windows 7/8/10 64-bit</li>
+            <li>Procesador: Intel Core i3-2100 / AMD FX-6300</li>
+            <li>RAM: 4GB</li>
+            <li>Tarjeta gráfica: NVIDIA GTX 760 / AMD Radeon HD 7950</li>
+            <li>DirectX: Versión 11</li>
+            <li>Espacio libre de almacenamiento: 25GB</li>
+            <li>Tarjeta de sonido: Compatible con DirectX 11</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card bg-black bg-opacity-75 border-warning mb-3">
+        <div class="card-header text-warning">Requisitos Recomendados</div>
+        <div class="card-body text-warning">
+          <ul class="mb-0">
+            <li>Sistema operativo: Windows 7/8/10 64-bit</li>
+            <li>Procesador: Intel Core i5-2500K / AMD Ryzen 5 1400</li>
+            <li>RAM: 8GB</li>
+            <li>Tarjeta gráfica: NVIDIA GTX 970 / AMD Radeon RX 570</li>
+            <li>DirectX: Versión 11</li>
+            <li>Espacio libre de almacenamiento: 25GB</li>
+            <li>Tarjeta de sonido: Compatible con DirectX 11</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="requisitos" class="marco-seccion mt-0 text-light" ...> 
+
+<!-- final -->
+<footer style="background-color: #dc0d1b;">
+  <div class="container-fluid text-white py-4">
+    <div class="row justify-content-center text-center">
+      <div class="col-12 col-md-3 mb-2 mb-md-0">
+        <p>© 2025 Espíritu del Lobo — Fanpage dedicada a <em>Sekiro: Shadows Die Twice</em>.</p>
+      </div>
+      <div class="col-12 col-md-9">
+        <div class="d-flex flex-wrap justify-content-center gap-4">
+          <a href="#" class="text-white text-decoration-none">Documentación<br>jurídica</a>
+          <a href="#" class="text-white text-decoration-none">Información<br>legal</a>
+          <a href="#" class="text-white text-decoration-none">Reserva de derechos<br>prospección textos/datos</a>
+          <a href="#" class="text-white text-decoration-none">Denuncia de<br>contenido ilícito</a>
+          <a href="#" class="text-white text-decoration-none">Política de<br>cookies</a>
+          <a href="#" class="text-white text-decoration-none">Gestionar<br>cookies</a>
+          <a href="#" class="text-white text-decoration-none">Política<br>de vídeo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
